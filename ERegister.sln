@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMA.ERegister.WebApi", "AMA.ERegister.WebApi\AMA.ERegister.WebApi.csproj", "{88EEC622-7C01-4A06-B7CB-F176B423B6A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8B891569-432E-47A3-BEF2-FD35BDABDBCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{06A758D0-6FB6-4288-91E7-9C30EB0FD69D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMA.ERegister.Data", "AMA.ERegister.Data\AMA.ERegister.Data.csproj", "{38BE9BCB-38F1-4D8E-8506-34F77EB654C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMA.ERegister.Model", "AMA.ERegister.Model\AMA.ERegister.Model.csproj", "{C81571D9-7A4E-456D-A220-24A1C8582733}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{A006EBC1-54EB-43F3-AFB1-BB97C7294C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMA.ERegister.Services", "AMA.ERegister.Services\AMA.ERegister.Services.csproj", "{B21E6D55-DDC5-411E-994A-0478B7178396}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88EEC622-7C01-4A06-B7CB-F176B423B6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88EEC622-7C01-4A06-B7CB-F176B423B6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88EEC622-7C01-4A06-B7CB-F176B423B6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88EEC622-7C01-4A06-B7CB-F176B423B6A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38BE9BCB-38F1-4D8E-8506-34F77EB654C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BE9BCB-38F1-4D8E-8506-34F77EB654C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BE9BCB-38F1-4D8E-8506-34F77EB654C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BE9BCB-38F1-4D8E-8506-34F77EB654C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C81571D9-7A4E-456D-A220-24A1C8582733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81571D9-7A4E-456D-A220-24A1C8582733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81571D9-7A4E-456D-A220-24A1C8582733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81571D9-7A4E-456D-A220-24A1C8582733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B21E6D55-DDC5-411E-994A-0478B7178396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B21E6D55-DDC5-411E-994A-0478B7178396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B21E6D55-DDC5-411E-994A-0478B7178396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B21E6D55-DDC5-411E-994A-0478B7178396}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38BE9BCB-38F1-4D8E-8506-34F77EB654C0} = {8B891569-432E-47A3-BEF2-FD35BDABDBCD}
+		{C81571D9-7A4E-456D-A220-24A1C8582733} = {06A758D0-6FB6-4288-91E7-9C30EB0FD69D}
+		{B21E6D55-DDC5-411E-994A-0478B7178396} = {A006EBC1-54EB-43F3-AFB1-BB97C7294C8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88F4DE78-59FC-4D67-B744-74A88BA5D194}
+	EndGlobalSection
+EndGlobal
