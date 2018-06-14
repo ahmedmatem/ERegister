@@ -19,6 +19,18 @@
         {
         }
 
+        public IDbSet<School> Schools { get; set; }
+
+        public IDbSet<Teacher> Teachers { get; set; }
+
+        public IDbSet<Group> Groups { get; set; }
+
+        public IDbSet<Student> Students { get; set; }
+
+        public IDbSet<Discipline> Disciplines { get; set; }
+
+        public IDbSet<Schedule> Schedules { get; set; }
+
         public static MsSqlDbContext Create()
         {
             return new MsSqlDbContext();
@@ -27,6 +39,10 @@
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Group>()
+                .HasOptional(x => x.Teacher)
+                .WithOptionalDependent(x => x.Group);
         }
 
         public override int SaveChanges()

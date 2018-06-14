@@ -54,6 +54,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\ISaveContext.cs" />
+    <Compile Include="Migrations\201806141926072_Base tables.cs" />
+    <Compile Include="Migrations\201806141926072_Base tables.Designer.cs">
+      <DependentUpon>201806141926072_Base tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806142127290_tables-rel.cs" />
+    <Compile Include="Migrations\201806142127290_tables-rel.Designer.cs">
+      <DependentUpon>201806142127290_tables-rel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MsSqlDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +78,14 @@
       <Project>{c81571d9-7a4e-456d-a220-24a1c8582733}</Project>
       <Name>AMA.ERegister.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806141926072_Base tables.resx">
+      <DependentUpon>201806141926072_Base tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806142127290_tables-rel.resx">
+      <DependentUpon>201806142127290_tables-rel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,7 +34,7 @@ namespace AMA.ERegister.Data.Migrations
             {
                 var roleStore = new RoleStore<IdentityRole>(context);
                 var roleManager = new RoleManager<IdentityRole>(roleStore);
-                var role = new IdentityRole { Name = "SuperAdmin" };
+                var role = new IdentityRole { Name = "SupperAdmin" };
                 roleManager.Create(role);
 
                 var userStore = new UserStore<User>(context);
@@ -42,7 +42,7 @@ namespace AMA.ERegister.Data.Migrations
                 var user = new User { UserName = AdministrationUserName, Email = AdministrationUserName, EmailConfirmed = true };
                 userManager.Create(user, AdministrationPassword);
 
-                userManager.AddToRole(user.Id, "SuperAdmin");
+                userManager.AddToRole(user.Id, "SupperAdmin");
             }
         }
     }

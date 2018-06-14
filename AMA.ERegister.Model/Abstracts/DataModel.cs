@@ -9,7 +9,7 @@
     public abstract class DataModel : IDeletable, IAuditable
     {
         [Key]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [DataType(DataType.DateTime)]
         public DateTime? CreatedOn { get; set; }

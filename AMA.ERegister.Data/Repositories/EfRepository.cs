@@ -35,7 +35,7 @@
             return this.DbSet;
         }
 
-        public T GetById(int id)
+        public T GetById(string id)
         {
             return this.All().FirstOrDefault(x => x.Id == id);
         }
